@@ -99,39 +99,28 @@
 	
 	});	
 
+	/*-----------------------------------------------------*/
+  	/* Navigation - Skills
+   ------------------------------------------------------ */  
+   var skillButton = $('.skill-toggle'),
+       skillNav = $('.skill-navigation');
 
-	/*---------------------------------------------------- */
-	/*	Masonry
-	------------------------------------------------------ */
-	var containerProjects = $('#folio-wrapper');
+   // skill button
+   skillButton.on('click', function(e) {
 
-	containerProjects.imagesLoaded( function() {
-
-		containerProjects.masonry( {		  
-		  	itemSelector: '.folio-item',
-		  	resize: true 
-		});
+		e.preventDefault();
+		skillButton.toggleClass('is-clicked');
+		skillNav.slideToggle();
 
 	});
 
+   // nav items
+  	skillNav.find('li a').on("click", function() {   
 
-	/*----------------------------------------------------*/
-	/*	Modal Popup
-	------------------------------------------------------*/
-   $('.item-wrap a').magnificPopup({
-
-      type:'inline',
-      fixedContentPos: false,
-      removalDelay: 300,
-      showCloseBtn: false,
-      mainClass: 'mfp-fade'
-
-   });
-
-   $(document).on('click', '.popup-modal-dismiss', function (e) {
-   	e.preventDefault();
-   	$.magnificPopup.close();
-   });
+   	// update the toggle button 		
+   	skillButton.toggleClass('is-clicked'); 		
+   	     
+  	});
 
 	
 	/*-----------------------------------------------------*/
@@ -273,18 +262,25 @@
 	var fadeOutTime = 400; // how slow/fast you want the button to hide
 	var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
 
-   // Show or hide the sticky footer button
+   // Show or hide the sticky footer + menu buttons
 	jQuery(window).scroll(function() {
+
 
 		if (!( $("#header-search").hasClass('is-visible'))) {
 
 			if (jQuery(window).scrollTop() >= pxShow) {
 				jQuery("#go-top").fadeIn(fadeInTime);
+				jQuery(".top-bar").fadeIn(fadeInTime);
+				
 			} else {
 				jQuery("#go-top").fadeOut(fadeOutTime);
+				jQuery(".top-bar").fadeOut(fadeOutTime);
+				
 			}
 
 		}		
+
+
 
 	});		
 
