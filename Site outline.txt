@@ -60,12 +60,9 @@ Recently Learned = 70
 Portfolio
  
 Dashboards
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-Link 1 Link 2 
  
-Machine Vision UI
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-Link 1 Link 2 
+Non-Contact Pointing Device
+
 
 
 Trusted to Deliver
@@ -87,60 +84,124 @@ Business Intelligence/Data Engineering
 
 
 Resume
-Highlighted Experience
-These are some of my resume highlights. Please reach out using my contact info below if you'd like to view my full resume.
  
-LifeCell Corporation, an Allergan Affiliate
-Senior Field Operations Analyst
-May 2019 - Present
-Technical Lead
-Human Tissue Machine Vision
-Automated inspection of human tissue for defects
-Managed data inputs and measured performance of COGNEX deep learning models
-Created metric for measuring image quality
-Designed and implemented project-critical image annotations process using Python, TensorFlow, C#, and COGNEX. Created metrics to track progress vs. plan. 
-Expected annual savings > $2MM/year
- 
-
-Project Lead and Architect
-Tissue Portal Metrics Redesign
-Dramatically improved metrics, data quality, and look-and-feel of 100-user externally facing supplier portal
-Created game-changing dashboards, including needed data pipelines using PowerBI, SharePoint, REST, and Selenium/Python
-Created value proposition, obtained funding, designed, and managed program of enhancements
-Secured the supply of human tissue donations for our most critical product line
- 
-Senior Finance Operations Analyst
-Jan 2016 – April 2019
-Data Migration Lead
-LifeCell SAP Implementation
-Managed 13 member team (Quality, Manufacturing, Procurement, MDM, Finance, Logistics, and IT) to extract, cleanse, and load mission critical master and transactional data - SAP and Oracle
-Created structured analytical processes which ensured data quality, team accountability, and timeliness
- 
+... 
 
 System Designer and Manager
 Operations Financial Analytics
-<DBD1>Created the LifeCell Operations Margin Analysis system which links batch yield, inventory levels, and other business events to financial metrics such as Gross Margin, Manufacturing and Purchasing Variances
+<DBD1>Created the LifeCell Operations Margin Analysis system which links batch yield, inventory levels, and other business events to financial metrics such as Gross Margin, Manufacturing and Purchasing Variances</DBD1>
 Created a “dollars in/dollars out” cost model which explains and predicts Oracle Subledger transactions, tied to the Oracle General Ledger
-Used SQL, MS Access, and Excel to download and analyze >2 MM rows of data <SQL1>
-Led monthly financial review meetings to explain and predict month-to-month results
-Identified timing issues and misleading signals in Oracle. Results of analysis drove improvements which eliminated >$15 MM of misleading P&L variances
-Collaborated closely with the Finance organization to provide “one version of the truth”. Accurately predicted gross margin, based on mid-month trends, production plans, and planned scrap.
-Owner of Cost-related metrics for weekly Tier-3 dashboard review Used Minitab control charts to analyze manufacturing process stability 
- 
+<SQL1>Data pipeline processed data from Oracle ERP and 3 other sources, >2 MM rows of data</SQL1>
 
-Senior Cost Accountant/Analyst
-Operations Finance
-Business Planning: lead cost rollup process. Created needed measurements of material utilization, capacity, and product yield Drove leadership approval of planning metrics through 1-page summaries of 1000s of cost entries.
-Cost modeling expert. New products and process improvements. 
-Monthly close - journal entries, reconciliations, and reports/analysis
-Managed response to internal and external audits
+...
 
-J&J
-	Datawarehouse <SQL2><DBD2>
+
+Senior Business Operations Analyst
+May 2010 – Dec 2015
+Tissue Inventory Planning -- Senior Planner
+	Managed Human and Porcine tissue inventories.  Mission critical material with long lead time (up to 6 months) required careful risk management
+Reduced Human tissue inventory by over $8MM.  No shortages or close calls.
+
+Oracle eBusiness (R12) implementation - MDM Program Manager 
+	Created end-to-end product data management lifecycle.  Created, tested, and implemented FDA/DEKRA-compliant standard operating procedures, including Oracle BR100, MD50, LifeCell SOPs, and HPQC test cases
+	People manager for 3-person data entry and system testing group
 
 
 
-Contact Me Via Linked In
-michaelherzog01 
-  
-© Copyright mherzog 2020 Design adapted from Kards template 
+New England BioLabs
+
+
+Jan 2010 – May 2010
+Ipswich, MA
+	SAP CRM Data Migration Lead - Data Engineer.  Implemented SQL Server/SSIS customer master data management system, used by 4 business groups.
+
+
+ETHICON, a Johnson & Johnson Company
+1997-2009 
+Somerville, NJ
+
+IT Manager - BI Architecture		2007-2009
+	<DBD2>Sales Compensation Reporting Data Warehouse -- Designed and managed business intelligence (Cognos, Informatica, Oracle, and Kalido) architecture.</DBD2>
+
+IT Lead - Solutions Delivery		2005-2007
+	<SQL2>Project Lighthouse -- Created enterprise business intelligence platform (23 servers).  Hands-on lead of 10-person team.  Managed $2.7 million budget.</SQL2>
+	Deep expertise in the following technologies:
+Cognos BI (PowerPlay, ReportStudio, QueryStudio, Metrics Manager/Studio)
+Oracle (PL/SQL, Performance Tuning)
+ETL:  Cognos Data Manager, Informatica
+Windows and Unix servers, including Windows cluster
+Automation frameworks:  Oracle, webMethods, Java, shell scripting, Windows, Tivoli Workload Scheduler
+Java Server Pages
+JD Edwards, legacy (Unix and Mainframe) ERP systems
+webMethods
+	Subject areas:  Sales, Finance, Procurement, and Quality 
+	Implemented several enterprise-wide automation frameworks
+
+Senior Analyst		1997-2005
+Various projects.  Domains included Sales, Operations, Finance, and Procurement
+
+
+==============================================================
+
+Portfolio details pages
+-----------------------
+
+Non-Contact Pointing Device
+
+<Because this is a unique application, please bring in the same text as in index.html for this page only>
+
+<Same image as in index.html>
+Features
+* Mouse click simulated by pressing a foot pedal
+* Process executes a small TensorFlow Object Recognition model (AutoML)
+* Process runs asynchronously to avoid cursor freezing if calling program blocks execution
+
+Technologies used
+* Python
+  -OpenCV
+  -Multiprocessing
+* TensorFlow/AutoML
+
+<Link to GitHub - same as index.html>
+
+-------------------------------------------------------------
+
+Dashboards
+
+Incoming Donor Metrics
+----------------------
+
+Dashboards-Tissue-Portal02.jpg
+
+Features
+* Displays monthly incoming donations of human tissue donations -- a critical input to the business's most important product line
+* Predicts current month results when enough data has been collected to make an accurate forecast
+
+Technical Details
+* PowerBI, deployed within a website written using the DevExpress framework
+* Source:  SAP purchase order receipts, quality and production measurements, inventory transactions
+
+
+Expense Budget vs Actual Dashboard
+----------------------------------
+
+Dashboards-Budget-vs-actual01.jpg
+
+Features
+* Effortless rollup from departments to enterprise view
+* Ability to drill to purchase order/transaction detail
+* Departments and accounts grouped according to business requirements
+
+Technical Details
+* QlikView
+* Source:  SAP GL account detail
+
+
+Promotions Dashboard – Demo
+---------------------------
+
+Dashboards-Snowflake01.png
+
+Technical Details
+* A demonstration of my ability to be productive in Snowflake and Tableau
+* Source:  Snowflake demo data (482M rows of demo sales data), sourced from a >1TB dataset
