@@ -1,0 +1,23 @@
+To do:
+High priority
+1.  Favicon - my initials
+2.  Have links on 1st page (e.g. LinkedIn) open in a new tab
+3.  On 1st page, make text links below my name link to the About Me page.  Ideally to content for each of these topics.
+4.  Ensure it works in mobile
+5.  Fix alignment/spacing in Skills
+
+Other
+1.  Personalize or delete "Anne Bonner Resume.html" and the zip file
+2.  Make other links to me dynamic so robots can't get these either -- LinkedIn and GitHub
+3.  CTC - tech, leadership
+4.  Mindfulness/meditation
+5.  Values:  Trusted to Deliver, Assume Noble Intent
+6.  Team leader
+7.  Remove code that is commented out
+
+Development areas
+1.  Ability to convincingly use the word "at scale"
+2.  Modern technologies - cloud, No SQL, Kubernetes
+3.  Write for Medium/publish
+
+

@@ -1,2 +1,2 @@
-# portfolio_ab
-A new and improved portfolio site
+# Michael Herzog Qualifications and Portfolio
+Mike's work experience and recent accomplishments

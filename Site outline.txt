@@ -1,0 +1,146 @@
+Michael Herzog
+
+One liner:  Business Insights + Software and Data Wizardry</h5>
+
+Main skill areas:
+	   			Data Engineering
+	   			Business Analytics
+				Machine Learning
+	   			Process Automation
+
+Skills
+
+Wizard = 95
+Expert = 90
+Highly Knowledgeable = 85
+Experienced = 80
+Recently Learned = 70
+
+	Data Engineering
+		SQL	- Wizard
+			* Resume <SQL1>
+			* Resume <SQL2>
+		Database design - Expert
+			* Resume <DBD1>
+			* Resume <DBD2>
+		Data wrangling - Expert
+		Data quality - Expert
+		Performance tuning - Highly Knowledgeable
+		Data pipelines - Highly Knowledgeable
+
+	Business Analytics
+		Dashboards and metrics - Expert
+		Cost Accounting - Expert
+		ERP - Supply Chain - Expert
+		
+	Software Engineering 
+		Analytical Systems and Websites - Expert
+		Process Automation - Expert
+		Python - Highly Knowledgeable
+
+	Machine Learning 
+		Object detection - Highly knowledgeable
+		Decision trees - Experienced
+		Explainability/SHAP - Recently Learned
+		
+	Collaboration
+		Office - Expert
+		Teams/SharePoint - Highly Knowledgeable
+		G Suite - Experienced
+		
+
+	Text description:
+		I deliver game-changing business insights using amazing technologies.
+		Project and People Manager. 
+		10 years business experience including Supply Planning, Operations Finance, and Field Service. MDM and data quality. Wizard at Excel. 
+		Deep experience in Python, SQL, Tableau, SAP and Oracle ERP, MS Office, SharePoint, Machine Learning -- Scikit-Learn, Tensorflow, and Object Recognition. 
+
+		
+		
+Portfolio
+ 
+Dashboards
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+Link 1 Link 2 
+ 
+Machine Vision UI
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+Link 1 Link 2 
+
+
+Trusted to Deliver
+ 
+Game-Changing Analytics
+Software Wizardry
+Data Engineering
+
+
+ 
+Statistics
+
+Python/Machine Learning/Data Science 
+ERP (SAP, Oracle) 
+Financial data analysis 
+Large, complex, global project management, design, and delivery 
+Business Intelligence/Data Engineering 
+
+
+
+Resume
+Highlighted Experience
+These are some of my resume highlights. Please reach out using my contact info below if you'd like to view my full resume.
+ 
+LifeCell Corporation, an Allergan Affiliate
+Senior Field Operations Analyst
+May 2019 - Present
+Technical Lead
+Human Tissue Machine Vision
+Automated inspection of human tissue for defects
+Managed data inputs and measured performance of COGNEX deep learning models
+Created metric for measuring image quality
+Designed and implemented project-critical image annotations process using Python, TensorFlow, C#, and COGNEX. Created metrics to track progress vs. plan. 
+Expected annual savings > $2MM/year
+ 
+
+Project Lead and Architect
+Tissue Portal Metrics Redesign
+Dramatically improved metrics, data quality, and look-and-feel of 100-user externally facing supplier portal
+Created game-changing dashboards, including needed data pipelines using PowerBI, SharePoint, REST, and Selenium/Python
+Created value proposition, obtained funding, designed, and managed program of enhancements
+Secured the supply of human tissue donations for our most critical product line
+ 
+Senior Finance Operations Analyst
+Jan 2016 – April 2019
+Data Migration Lead
+LifeCell SAP Implementation
+Managed 13 member team (Quality, Manufacturing, Procurement, MDM, Finance, Logistics, and IT) to extract, cleanse, and load mission critical master and transactional data - SAP and Oracle
+Created structured analytical processes which ensured data quality, team accountability, and timeliness
+ 
+
+System Designer and Manager
+Operations Financial Analytics
+<DBD1>Created the LifeCell Operations Margin Analysis system which links batch yield, inventory levels, and other business events to financial metrics such as Gross Margin, Manufacturing and Purchasing Variances
+Created a “dollars in/dollars out” cost model which explains and predicts Oracle Subledger transactions, tied to the Oracle General Ledger
+Used SQL, MS Access, and Excel to download and analyze >2 MM rows of data <SQL1>
+Led monthly financial review meetings to explain and predict month-to-month results
+Identified timing issues and misleading signals in Oracle. Results of analysis drove improvements which eliminated >$15 MM of misleading P&L variances
+Collaborated closely with the Finance organization to provide “one version of the truth”. Accurately predicted gross margin, based on mid-month trends, production plans, and planned scrap.
+Owner of Cost-related metrics for weekly Tier-3 dashboard review Used Minitab control charts to analyze manufacturing process stability 
+ 
+
+Senior Cost Accountant/Analyst
+Operations Finance
+Business Planning: lead cost rollup process. Created needed measurements of material utilization, capacity, and product yield Drove leadership approval of planning metrics through 1-page summaries of 1000s of cost entries.
+Cost modeling expert. New products and process improvements. 
+Monthly close - journal entries, reconciliations, and reports/analysis
+Managed response to internal and external audits
+
+J&J
+	Datawarehouse <SQL2><DBD2>
+
+
+
+Contact Me Via Linked In
+michaelherzog01 
+  
+© Copyright mherzog 2020 Design adapted from Kards template 
