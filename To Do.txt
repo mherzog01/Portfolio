@@ -12,11 +12,16 @@ High priority
 6.  Tighten skills graph -- see https://bonn0062.github.io/anne_bonner/
 
 [Further discussion needed] 7.  Add link to Portfolio page for "Non-Contact Pointing Device" from resume entry "Human Tissue Machine Vision"
-8.  Implement attributes/graphics (i.e. Skills and business Acumen, Leadership, Hands on, Business Results/Big picture Thinking)
+
+8.  Implement attributes/graphics
+- Skills and business Acumen
+- Leadership 
+- Hands on 
+- Business Results/Big picture Thinking
 
 Other
-[only you are able to delete files from the repo.  I can walk you through this next mtg] 1.  Personalize or delete "Anne Bonner Resume.html" and the zip file
-2.  Make other links to me dynamic so robots can't get these either -- LinkedIn and GitHub
+[only you are able to delete files from the repo] 1.  Personalize or delete "Anne Bonner Resume.html" and the zip file
+[x] 2.  Make other links to me dynamic so robots can't get these either -- LinkedIn and GitHub
 3.  CTC - tech, leadership
 4.  Mindfulness/meditation
 5.  Values:  Trusted to Deliver, Assume Noble Intent

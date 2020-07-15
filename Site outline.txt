@@ -37,6 +37,8 @@ Recently Learned = 70
 		Analytical Systems and Websites - Expert
 		Process Automation - Expert
 		Python - Highly Knowledgeable
+		Java - Experienced
+		C# - Experienced
 
 	Machine Learning 
 		Object detection - Highly knowledgeable
