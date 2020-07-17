@@ -41,6 +41,9 @@
 	<link rel="icon" type="image/png" href="favicon_io/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="favicon_io/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="favicon_io/favicon-128.png" sizes="128x128" />
+
+	<!-- <link rel="icon" type="image/png" href="favicon_io/favicon-1.ico" sizes="32x32" /> -->
+
 	<meta name="application-name" content="&nbsp;"/>
 	<meta name="msapplication-TileColor" content="#FFFFFF" />
 	<meta name="msapplication-TileImage" content="mstile-144x144.png" />
@@ -59,13 +62,14 @@
    	<div class="row">
 
    		<div class="top-bar">
+
+	   		<div class="logo">
+		         <a href="index.html"><img src="images/MH-logo.svg">></a>
+		    </div>	
+
+
    			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-	   		
-<!-- 	   		<div class="logo">
-		         <a href="index.html"></a>
-		    </div>	 -->
-		   
 
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
@@ -135,19 +139,15 @@
    	<div class="row section-intro">
    		<div class="col-twelve">
 
+			<div class="about-content row" style="display: flex; justify-content: center; align-items: center; text-align: center;">
 
-
-			<div class="about-content">
-
-				<div class="col-1-2">
-					<img style="margin-bottom:10px; height: 18rem; width: 18rem; border-radius: 50%; margin: .9rem 0 0 0; float: right;" src="images/MH-mid.jpg" alt="Profile Picture">
-				</div>
+					<img style="margin-bottom:10px; height: 18rem; width: 18rem; border-radius: 50%; margin: .9rem 0 0 0; float: left;" src="images/MH-mid.jpg" alt="Profile Picture">
 
 	   			<div class="col-1-2" style="padding-top: 1rem; text-align: left; padding-right: 4rem;">
 	   				<h5>About</h5>
 	   				<h1>Michael Herzog</h1>
 
-		   			<ul style="margin-bottom:0.4rem" class="info-list">
+		   			<ul style="margin-bottom:0.4rem padding-left: 0; margin-bottom: 0.6rem" class="info-list">
 		   				<li style="padding-left: 0">
 		   					<span>Current Position:</span>
 		   				</li>
@@ -174,17 +174,17 @@
 
 			</div>
 
-			<div class="intro-info col-full">
+			<h1 style="margin-bottom: 0; padding-bottom: 2rem;">Skills</h1>
+		   			<!-- <p></p> -->
 
-	   			<div class="tab-full about-content" style="padding: 0;" >
+			<div class="intro-info col-full skill-background" style="padding: 0;">
 
-		   			<h3>Skills</h3>
-		   			<p></p>
+	   			<div class="tab-full about-content" style="padding: 3rem 0 0 0;" >
 
-		   			<div class="col-1-2" style="float:left;">
+		   			<div class="col-1-2">
 			   			<h2 align="left">Data Engineering</h2>
 
-						<ul class="skill-bars">
+						<ul class="skill-bars skill-border">
 	<!-- 						   <li>
 						   	<div class="progress percent85"><span>Highly Knowledeable</span></div>
 						   	<strong>Python</strong>
@@ -207,7 +207,7 @@
 						   </li> -->
 
 						   	<li>
-							   	<div class="progress percent95"><span>Wizard</span></div>
+							   	<div class="progress percent95"><span style="right: -2rem">Wizard</span></div>
 								<strong>SQL</strong>
 							</li>
 
@@ -238,35 +238,12 @@
 		      
 						</ul> <!-- /skill-bars -->	
 
-					</div> <!-- / Data Engineering -->
-
-					<div class="col-1-2">
-						<h2 align="left">Business Analytics</h2>
-
-						<ul class="skill-bars">
-						   	<li>
-							   	<div class="progress percent90"><span>Expert</span></div>
-							   	<strong>Dashboards and metrics</strong>
-							</li>
-
-							<li>
-							   	<div class="progress percent90"><span>Expert</span></div>
-							   	<strong>Cost Accounting</strong>
-							</li>
-
-							<li>
-							   	<div class="progress percent90"><span>Expert</span></div>
-							   	<strong>ERP – Supply Chain</strong>
-							</li>
-						</ul> <!-- /skill-bars -->	
-					</div> <!-- / Business Analytics -->
-
-					<div class="col-1-2">
+						<!-- <div class="col-1-2"> -->
 						<h2 align="left">Software Engineering</h2>	
 
 						<ul class="skill-bars">
 						   	<li>
-							   	<div class="progress percent90"><span>Expert</span></div>
+							   	<div class="progress percent90"><span id="long-skill" style="right: -3.5rem">Expert</span></div>
 							   	<strong>Analytical Systems and Websites</strong>
 						   	</li>
 						   
@@ -290,12 +267,37 @@
 							   	<strong>C#</strong>
 						   	</li>
 						</ul> <!-- /skill-bars -->	
-					</div> <!-- / Software Engineering -->
+						<!-- </div> -->
+						
+					</div> <!-- / Data Engineering + Software Engineering -->
+
+					<div class="col-1-2">
+						<h2 align="left">Business Analytics</h2>
+
+						<ul class="skill-bars skill-border">
+						   	<li>
+							   	<div class="progress percent90"><span>Expert</span></div>
+							   	<strong>Dashboards and metrics</strong>
+							</li>
+
+							<li>
+							   	<div class="progress percent90"><span>Expert</span></div>
+							   	<strong>Cost Accounting</strong>
+							</li>
+
+							<li>
+							   	<div class="progress percent90"><span>Expert</span></div>
+							   	<strong>ERP – Supply Chain</strong>
+							</li>
+						</ul> <!-- /skill-bars -->	
+					</div> <!-- / Business Analytics -->
+
+					
 
 					<div class="col-1-2">
 						<h2 align="left">Machine Learning</h2>	
 
-						<ul class="skill-bars">
+						<ul class="skill-bars skill-border">
 						   	<li>
 							   	<div class="progress percent85"><span>Highly Knowledgeable</span></div>
 							   	<strong>Object detection</strong>
@@ -307,7 +309,7 @@
 						   	</li>
 
 						   	<li>
-							   	<div class="progress percent70"><span>Recently Learned</span></div>
+							   	<div class="progress percent70"><span style="right: -5.5rem">Recently Learned</span></div>
 							   	<strong>Explainability/SHAP</strong>
 						   	</li>
 						   

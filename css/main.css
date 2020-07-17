@@ -940,6 +940,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * skillbars - (_skillbars.scss)
  * -------------------------------------------------------------------
  */
+.skill-background {
+	background-color:  #ececec;
+}
+
+.skill-bars li:last-child {
+	margin-bottom: 4rem;
+}
+
+.skill-border{
+	border-bottom: 1.5px solid white;
+}
+
 .skill-links{
 	font-size: 1.2rem;
 }
@@ -990,7 +1002,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .skill-bars li .progress span {
 	position: absolute;
-	right: 0;
+	right: -3rem;
 	top: -3.6rem;
 	display: block;
 	font-family: "poppins-regular", sans-serif;
@@ -1005,11 +1017,23 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: absolute;
 	left: 50%;
 	bottom: -5px;
-	margin-left: -5px;
+	margin-left: -10px;
 	border-right: 5px solid transparent;
 	border-left: 5px solid transparent;
 	border-top: 5px solid #313131;
 	content: "";
+}
+
+/*#long-skill::after {
+	left: 28%;
+}*/
+
+.skill-bars li strong::after { 
+	content: "\f196";
+	font-family: fontAwesome;
+	vertical-align: baseline;
+	padding-left: 0.75rem;
+	color: rgba(49, 49, 49, 0.5);
 }
 
 .skill-bars li .percent5   { width: 5%; }
@@ -1135,8 +1159,8 @@ header .top-bar {
 }
 header .logo {
 	float: left;
-	margin-left: 20px;
-	margin-right: 50px;
+/*	margin-left: 20px;
+	margin-right: 50px;*/
 	margin-top: 25px;
 	position: relative;
 }
@@ -1148,10 +1172,10 @@ header .logo a {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 92px;
-	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+	width: 40px;
+	height: auto;
+	background: url("../images/MH-logo.svg") no-repeat center;
+	background-size: 40px 40px;
 }
 
 /**
@@ -1162,8 +1186,8 @@ header .logo a {
 	float: left;
 	width: 40px;
 	height: 40px;
-	margin-left: 20px;
-	margin-top: 13px;
+	margin-left: 8px;
+	margin-top: 24px;
 	display: block;
 	position: relative;
 }
@@ -1261,6 +1285,7 @@ header .logo a {
 	position: absolute;
 	top: 100%;
 	left: 0;
+	margin-top: 8px;
 }
 
 /* dropdown nav */
@@ -1755,6 +1780,15 @@ header .logo a {
 #resume .timeline-content {
 	margin-left: 35%;
 	padding-left: 60px;
+}
+
+#resume .timeline-content ul > ul {
+	list-style: none;
+}
+
+#resume .timeline-content ul > ul > li:before{
+	content: "-"; /* Insert content that looks like bullets */
+  	padding-right: 8px;
 }
 
 #resume .timeline-content h2{
