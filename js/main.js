@@ -122,6 +122,25 @@
    	     
   	});
 
+
+	/*----------------------------------------------------*/
+	/*	Modal Popup
+	------------------------------------------------------*/
+   $('.item-wrap a').magnificPopup({
+
+      type:'inline',
+      fixedContentPos: false,
+      removalDelay: 300,
+      showCloseBtn: false,
+      mainClass: 'mfp-fade'
+
+   });
+
+   $(document).on('click', '.popup-modal-dismiss', function (e) {
+   	e.preventDefault();
+   	$.magnificPopup.close();
+   });
+
 	
 	/*-----------------------------------------------------*/
   	/* Navigation Menu
@@ -252,6 +271,22 @@
   		}
 
 	});
+	
+
+	/*----------------------------------------------------- */
+  	/* Contact for Resume
+   	------------------------------------------------------- */ 
+	// resume button
+	var resButton = $('.resButton');
+
+   	resButton.on('click', function(e) {
+
+		e.preventDefault();
+		resButton.toggleClass('is-clicked');
+		document.getElementById('contactSubject').value = "Resume Request"
+		document.getElementById('contactMessage').value = "Hi, I'd like a copy of your full resume."
+
+	});
 
 
  	/*----------------------------------------------------- */
@@ -279,8 +314,6 @@
 			}
 
 		}		
-
-
 
 	});		
 
