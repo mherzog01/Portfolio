@@ -944,9 +944,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	background-color:  #ececec;
 }
 
-.skill-bars li:last-child {
+/*.skill-bars li:last-child {
 	margin-bottom: 4rem;
-}
+}*/
 
 .skill-border{
 	border-bottom: 1.5px solid white;
@@ -1998,7 +1998,6 @@ header .logo a {
 #portfolio .folio-title {
 	color: #FFFFFF;
 	font-size: 3.3rem;
-	margin-top: 1rem;
 	margin-bottom: 0;
 }
 
@@ -2057,12 +2056,14 @@ header .logo a {
 }
 
 p.breadcrumb {
-	font-family: 'lora-italic', serif;
+	font-family: 'lora-regular', serif;
 	font-size: 1.5rem;
 }
 
 p.breadcrumb  > a {
 	color: #7d7d7d;
+	font-family: 'lora-italic', serif;
+	word-spacing: .2rem;
 	text-decoration: underline;
 }
 
@@ -2080,8 +2081,21 @@ p.breadcrumb  > a:hover {
 	margin: 0 15rem;
 }
 
-.ex-portfolio-content h3{
-	color: #5f5f5f;
+.ex-portfolio-content .folio-title {
+	margin-top: 2rem;
+}
+
+.ex-portfolio-content h3, ul, p{
+	color: #c7c7c7;
+}
+
+.ex-portfolio-content ul > ul{
+	list-style: none;
+}
+
+.ex-portfolio-content ul > ul > li:before{
+	content: "-"; /* Insert content that looks like bullets */
+  	padding-right: 8px;
 }
 
 /**
@@ -2368,6 +2382,7 @@ p.breadcrumb  > a:hover {
 }
 .services-list .desc {
 	color: rgba(255, 255, 255, 0.6);
+	text-align: left;
 }
 
 /* pagination */
@@ -2518,12 +2533,21 @@ padding-right: 1rem;
 	color: rgba(255, 255, 255, 0.3) !important;
 }
 
+.contact-label {
+	color: rgba(255, 255, 255, 0.3);	
+	padding: 0rem 2rem;
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.5rem;
+	position: absolute;
+}
+
 #contact form {
 	margin-top: 0;
 	margin-bottom: 3rem;
 }
 #contact form .form-field {
 	position: relative;
+	background-color: rgba(255, 255, 255, 0.15);
 }
 #contact form .form-field:before, #contact form .form-field:after {
 	content: "";
@@ -2569,8 +2593,8 @@ padding-right: 1rem;
 #contact input[type="text"],
 #contact input[type="password"],
 #contact input[type="email"] {
-	height: 6.6rem;
-	padding: 1.8rem 2rem;
+	height: 8rem;
+	padding: 1.8rem 2rem 0rem 2rem;
 }
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
@@ -2578,9 +2602,10 @@ padding-right: 1rem;
 	border-color: #FF0077;
 	color: #FFFFFF;
 }
+
 #contact textarea {
 	min-height: 20rem;
-	padding: 1.8rem 2rem;
+	padding: 3rem 2rem 0rem 2rem;
 }
 #contact textarea:focus {
 	border-color: #FF0077;
@@ -2593,7 +2618,7 @@ padding-right: 1rem;
 	height: 6.6rem;
 	line-height: 6.6rem;
 	padding: 0 3rem;
-	margin-top: 4.8rem;
+	margin: 4.8rem 0 0 0;
 	width: 100%;
 	background: #FF0077;
 	color: #FFFFFF;
