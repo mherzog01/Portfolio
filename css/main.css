@@ -944,12 +944,36 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	background-color:  #ececec;
 }
 
-/*.skill-bars li:last-child {
-	margin-bottom: 4rem;
-}*/
+#skills {
+	background-color:  #d8d8d8;
+	padding-top: 12rem;
+	padding-bottom: 15rem;
+}
 
-.skill-border{
-	border-bottom: 1.5px solid white;
+#skills .section-intro {
+	max-width: 1000px;	
+}
+
+.vert-skill-border{
+	border-right: 2px solid white;
+}
+
+.skill-background {
+	border: 2px solid white;	
+}
+
+.skill-background .col-1-2{
+	padding: 0 0 0 0;
+}
+
+.skill-section{
+	border-top: 2px solid white;
+	
+	padding: 3rem 20px 0 20px;
+}
+
+.skill-background .col-1-2 .skill-section:first-child{
+border: none;
 }
 
 .skill-links{
@@ -970,7 +994,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .skill-bars {
 	list-style: none;
-	margin: 6rem 0 3rem;
+	margin-top: 6rem;
+	margin-left: 0rem;
+
 }
 .skill-bars li {
 	height: .6rem;
@@ -1582,7 +1608,6 @@ header .logo a {
 }
 
 .intro-info {
-	margin-bottom: 3rem;
 	padding-left: 0rem;
 	padding-right: 0rem;
 }
@@ -1596,29 +1621,39 @@ header .logo a {
 	/*float: left;*/
 }
 .intro-info .lead {
-	text-align: left;
-
+	text-align: center; 
+	font-size: 1.5rem;
 }
 
 .intro-info .icon-part{
 	float:left;
 	font-size: 8rem;
 	line-height: 5rem;
-	padding: 0 2rem 0 0;
 	width: 10rem;
 }
 
 .intro-info .icon-part h5{
-	font-size: 1.25rem;
-	line-height: 2rem;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
 	letter-spacing: 0;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 	text-align: center;
 }
 
 .intro-info .info-part{
-	margin-bottom: 6rem;
-	padding-left: 0rem;
+	margin-bottom: 5rem;
+}
+
+.intro-info .info-part {
+	border-left: 1px solid black;
+	min-height: 17.4rem;
+}
+.intro-info .info-part:first-child {
+	border: none;
+}
+
+.intro-info .info-part:last-child {
+	border: none;
 }
 
 .about-content {
@@ -2074,7 +2109,6 @@ p.breadcrumb  > a:hover {
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-
 }
 
 .ex-portfolio {
@@ -2085,7 +2119,9 @@ p.breadcrumb  > a:hover {
 	margin-top: 2rem;
 }
 
-.ex-portfolio-content h3, ul, p{
+.ex-portfolio-content h3, 
+.ex-portfolio-content ul, 
+.ex-portfolio-content p{
 	color: #c7c7c7;
 }
 
@@ -2945,6 +2981,8 @@ footer .copyright span:last-child::after {
 .tooltip {
   position: relative;
   display: inline-block;
+  padding-bottom: 40px;
+  padding-right: 30px;
 }
 
 .tooltip ul {
@@ -2988,8 +3026,8 @@ footer .copyright span:last-child::after {
   /* Position the tooltip text */
 	position: absolute;
 	z-index: 1;
-	top: 135%;
-	left: 50%;
+	top: 60%;
+	left: 20%;
 	margin-left: -50px;
 
 	/*  bottom: 125%;
@@ -2999,6 +3037,10 @@ footer .copyright span:last-child::after {
   /* Fade in tooltip */
 	opacity: 0;
 	transition: opacity 0.3s;
+}
+
+.tooltiptext{
+	
 }
 
 /* Tooltip arrow */
