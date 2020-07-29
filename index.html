@@ -194,52 +194,13 @@
 					</div>
 			   		<p class="lead"> 10 years business experience including Supply Planning, Operations Finance, and Field Service.</p>
 			   	</div>
-
 			</div>
-
-<!-- OPTION THREE: 1 column -->
-<!-- 	   		<div class="intro-info col-full intro-text" style="padding: 0 150px;">
-
-	   			<div class="info-part" style="margin-bottom: 6rem;">
-		   			<div class="icon-part col-1-4" style="width: 15rem; font-size: 5rem">
-						<i class="fa fa-user-tie"></i>
-						<h5>Skills + Business Acumen</h5>
-					</div>
-					<p class="lead" style="padding-top:2rem;"> I deliver game-changing business insights using amazing technologies.</p>
-				</div>
-	   			
-	   			<div class="info-part" style="margin-bottom: 6rem;">
-		   			<div class="icon-part col-1-4" style="width: 15rem; font-size: 5rem">
-						<i class="far fa-heart"></i>
-						<h5>Leadership</h5>
-					</div>
-			   		<p class="lead" style="padding-top:2rem;"> Project and People Manager. </p>
-			   	</div>
-
-			   	<div class="info-part" style="margin-bottom: 6rem;">
-		   			<div class="icon-part col-1-4" style="width: 15rem; font-size: 5rem">
-						<i class="far fa-hand-paper"></i>
-						<h5>Hands On</h5>
-					</div>
-			   		<p class="lead" style="padding-top:2rem;"> MDM and data quality.  Wizard at Excel. </p>
-			   	</div>
-
-				<div class="info-part" style="margin-bottom: 6rem;">
-		   			<div class="icon-part col-1-4" style="width: 15rem; font-size: 5rem">
-						<i class="fa fa-globe"></i>
-						<h5>Business Results / Big Picture Thinking</h5>
-					</div>
-			   		<p class="lead" style="padding-top:2rem;"> 10 years business experience including Supply Planning, Operations Finance, and Field Service.</p>
-			   	</div>
-
-			</div> -->
 
 			<div class="row button-section">
 		   		<div class="col-twelve">
 		   			<a href="#portfolio" title="Hire Me" class="button stroke smoothscroll">Portfolio</a>
 		   			<a href="#resume" title="Hire Me" class="button stroke smoothscroll">Resume</a>
 		   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Contact</a>
-		   			<!--<a href="JavaScript:alert('LinkedIn?')" title="Hire Me" class="button stroke smoothscroll">Reach Out</a>-->
 		   		</div>   		
 		   	</div>
 
@@ -277,10 +238,9 @@
 										<span class="tooltiptext">
 											<ul>
 												<li>
-													<span></span>
-													<!-- Data pipeline processed data from Oracle ERP and 3 other sources, >2 MM rows of data -->
+													<span id="SQL-1-container"></span>
 													<p>
-														<a class="smoothscroll" href="#SQL-1">read more: Resume > System Designer and Manager</a>
+														<a id="SQL-1-link" class="smoothscroll" href="#SQL-1">read more: Resume > System Designer and Manager</a>
 													</p>
 												</li>
 												<li>
@@ -829,7 +789,7 @@
 							<ul>
 								<li>Created a “dollars in/dollars out” cost model which explains and predicts Oracle Subledger transactions, tied to the Oracle General Ledger</li>
 								
-								<li>Data pipeline processed data from Oracle ERP and 3 other sources, >2 MM rows of data</li>
+								<li id="SQL-1-text">Data pipeline processed data from Oracle ERP and 3 other sources, >2 MM rows of data</li>
 							</ul>
 
 							<li>Led monthly financial review meetings to explain and predict month-to-month results</li>
@@ -1186,7 +1146,57 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script> <!-- image carousel -->
 
-	
+	<script type="text/javascript">
+		var SQLlink = document.getElementById('SQL-1-link');
+		var SQLtext = document.getElementById('SQL-1-text');
+
+		$(window).load(function pullSourceText(){
+			var SQLcontainer = document.getElementById('SQL-1-container');
+		
+			SQLcontainer.innerHTML = SQLtext.innerHTML; 
+		});
+
+
+		function fadeButton(){
+		  	$(SQLtext).css('background-color', 'transparent');
+		  	$('#back-to-skills').css('opacity', '0');
+		  	$('#close').css('opacity', '0');
+			$('#back-to-skills').remove();
+			$('#close').remove();
+			
+			return;
+		};
+
+		// when click SQLlink, scrollHighlight
+		$(SQLlink).on('click', function scrollHighlight() {
+
+			var backButtonDOM = "<a id='back-to-skills' class='button' href='#skills' onclick='fadeButton()'>Back to Skills</a><a id='close' onclick='fadeButton()'></a>"; //smoothscroll not working?
+
+			$(SQLtext).css('background-color', 'lemonchiffon');
+			$(SQLtext).css('transition', 'background-color 0.3s ease');
+
+			$(SQLtext).before(backButtonDOM);
+
+			// setTimeout(ifScrolled, 3000);
+
+			// function ifScrolled(e){		
+
+			// 	window.addEventListener('scroll', function(e) {
+
+			// 		var SQLposition = document.getElementById('SQL-1');
+
+			// 		if (window.scrollY != SQLposition.scrollHeight ){
+			// 			fadeButton();
+			// 			console.log('running fadeButton');
+			// 			return;	
+			// 		}
+			// 	});
+			// };
+
+  		});
+
+	</script>>
+
 	<script type="text/javascript">
 		function slickCarousel(){
 		  $('.dashboards').slick({
@@ -1203,13 +1213,13 @@
 	</script>
 
 	<script>
-	function setcopyright(){
-	//https://stackoverflow.com/questions/6002254/get-the-current-year-in-javascript
-	curyear = new Date().getFullYear();
-	copyright_text = '© Copyright mherzog ' + curyear
-	return copyright_text;
-	}
-	document.getElementById('copyright_content').innerHTML = setcopyright();
+		function setcopyright(){
+		//https://stackoverflow.com/questions/6002254/get-the-current-year-in-javascript
+		curyear = new Date().getFullYear();
+		copyright_text = '© Copyright mherzog ' + curyear
+		return copyright_text;
+		}
+		document.getElementById('copyright_content').innerHTML = setcopyright();
 	</script>
 
 </body>

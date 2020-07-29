@@ -940,6 +940,53 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * skillbars - (_skillbars.scss)
  * -------------------------------------------------------------------
  */
+
+#back-to-skills{
+	position: absolute;
+    left: 15%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#back-to-skills::before{
+	content: "\f077";
+	font-family: 'fontAwesome';
+	font-size: 1rem;
+    vertical-align: middle;
+    padding-right: 1rem;
+
+}
+#close{
+	top: 39%;
+	left: 39%;
+	height: 24px;
+  	width: 24px;
+  	position: absolute;
+  	background-color: #bebebe;
+  	border-radius: 50%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#close:hover{
+	cursor: pointer;
+	background-color: #f1f1f1;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#close::before{
+  content: '\f00d';
+  font-family: 'fontAwesome';
+  font-size: 1.25rem;
+}
+
 .skill-background {
 	background-color:  #ececec;
 }
@@ -1717,9 +1764,7 @@ header .logo a {
 		margin-right: 0;
 		margin-left: 0;
 	}
-	.intro-info .lead {
-		padding-left: 4rem;
-	}
+
 }
 @media only screen and (max-width:768px) {
 	.intro-info img {
@@ -1727,9 +1772,6 @@ header .logo a {
 		height: 13rem;
 		/*width: 7.8rem;*/
 		width: 13rem;
-	}
-	.intro-info .lead {
-		padding-left: 5rem;
 	}
 	.about-content h3 {
 		text-align: center;
@@ -2893,86 +2935,6 @@ footer .copyright span:last-child::after {
 
 /*# sourceMappingURL=main.css.map */
 
-/**
- * skill toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
-
-.skill-toggle a, a:focus {
-	color: #000000;
-}
-
-.skill-toggle span::after {
-	width: 100%;
-	height: 100%;
-	background-color: inherit;
-	-moz-transition-duration: 0.2s, 0.2s;
-	-o-transition-duration: 0.2s, 0.2s;
-	-webkit-transition-duration: 0.2s, 0.2s;
-	-ms-transition-duration: 0.2s, 0.2s;
-	transition-duration: 0.2s, 0.2s;
-	-moz-transition-delay: 0.2s, 0s;
-	-o-transition-delay: 0.2s, 0s;
-	-webkit-transition-delay: 0.2s, 0s;
-	-ms-transition-delay: 0.2s, 0s;
-	transition-delay: 0.2s, 0s;
-	color: #ff0077;
-}
-
-/* is clicked */
-.skill-toggle.is-clicked{
-	color: #000000;
-}
-.skill-toggle.is-clicked span::after {
-	-moz-transition-delay: 0s, 0.2s;
-	-o-transition-delay: 0s, 0.2s;
-	-webkit-transition-delay: 0s, 0.2s;
-	-ms-transition-delay: 0s, 0.2s;
-	transition-delay: 0s, 0.2s;
-}
-
-/* navigation panel */
-#skill-nav-wrap {
-	display: block;
-	width: 100%;
-	/*font-family: "poppins-medium", sans-serif;*/
-	font-size: 1.2rem;
-	/*position: absolute;*/
-	/*top: 100%;*/
-	left: 0;
-}
-
-/* dropdown nav */
-.skill-navigation {
-	margin: 0;
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: none;
-}
-.skill-navigation li {
-	display: block;
-	text-align: center;
-	padding: 0;
-	height: auto;
-	z-index: 500;
-	margin-bottom: 0rem;
-}
-}
-
-.skill-navigation li a {
-	display: block;
-	color: #000000;
-	width: auto;
-	line-height: 16px;
-	border: none;
-}
-
-.skill-navigation li a:hover {
-	color: #FF0077;
-	/*padding-left: 1rem;*/
-}
-
 /*_______________________________________________________________*/
 
 /* Tooltip container */
@@ -3006,6 +2968,14 @@ footer .copyright span:last-child::after {
 	font-family: "lora-italic", serif;
 	font-size: 1.2rem;
 	padding-top: 0.75rem;
+}
+
+.tooltip li p a{
+    -moz-transition: none;
+    -o-transition: none;
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
 }
 
 
