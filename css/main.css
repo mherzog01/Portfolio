@@ -987,10 +987,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   font-size: 1.25rem;
 }
 
-.skill-background {
-	background-color:  #ececec;
-}
-
 #skills {
 	background-color:  #d8d8d8;
 	padding-top: 12rem;
@@ -1006,7 +1002,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .skill-background {
-	border: 2px solid white;	
+	background-color:  #ececec;
+	/*border: 1px solid black;	*/
 }
 
 .skill-background .col-1-2{
