@@ -48,8 +48,6 @@
 	<link rel="icon" type="image/png" href="favicon_io/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="favicon_io/favicon-128.png" sizes="128x128" />
 
-	<!-- <link rel="icon" type="image/png" href="favicon_io/favicon-1.ico" sizes="32x32" /> -->
-
 	<meta name="application-name" content="&nbsp;"/>
 	<meta name="msapplication-TileColor" content="#FFFFFF" />
 	<meta name="msapplication-TileImage" content="mstile-144x144.png" />
@@ -109,10 +107,10 @@
 	   			<h1>Michael Herzog</h1>
 
 	   			<p class="intro-position">
-	   				<span>Data Engineering</span>
-	   				<span>Business Analytics</span>
-					<span>Process Automation</span> 
-					<span>Machine Learning</span>
+	   				<span><a class="smoothscroll" href="">Data Engineering</a></span>
+	   				<span><a class="smoothscroll" href="">Business Analytics</a></span>
+					<span><a class="smoothscroll" href="">Process Automation</a></span> 
+					<span><a class="smoothscroll" href="">Machine Learning</a></span>
 	   			</p>
 
    			   	<ul class="intro-social">        
@@ -244,8 +242,10 @@
 													</p>
 												</li>
 												<li>
-												Project Lighthouse — Created enterprise business intelligence platform (23 servers).  Hands-on lead of 10-person team.  Managed $2.7 million budget.
-													<p>read more: Resume > IT Lead</p>
+													<span id="SQL-2-container"></span>
+													<p>
+														<a id="SQL-2-link" class="smoothscroll" href="#SQL-2">read more: Resume > IT Lead</a>
+													</p>
 												</li>
 											</ul>
 										</span>
@@ -255,7 +255,25 @@
 
 							<li>
 							   	<div class="progress percent90"><span>Expert</span></div>
-								<strong>Database design <i></i>
+								<strong>Database design 
+									<i class="tooltip">
+										<span class="tooltiptext">
+											<ul>
+												<li>
+													<span id="DBD-1-container"></span>
+													<p>
+														<a id="DBD-1-link" class="smoothscroll" href="#DBD-1">read more: Resume > System Designer and Manager</a>
+													</p>
+												</li>
+												<li>
+													<span id="DBD-2-container"></span>
+													<p>
+														<a id="DBD-2-link" class="smoothscroll" href="#DBD-2">read more: Resume > IT Manager</a>
+													</p>
+												</li>
+											</ul>
+										</span>
+									</i>
 								</strong>
 						   	</li>
 
@@ -726,7 +744,7 @@
 							<li>Expected annual savings > $2MM/year</li>
 						</ul>
 						
-						<a class="button" href="">View Project</a>
+						<a class="button" href="portfolio-pages/tissueMachineVision.html" target="_blank">View Project</a>
 
 	   				</div>
 
@@ -780,11 +798,12 @@
 	   					<i class="fa fa-briefcase"></i>
 	   				</div>
 
-	   				<div class="timeline-content" id="SQL-1">
+	   				<div class="timeline-content" id="SQL-1"> <div id="DBD-1"></div> 
+	   				<!-- ^ create new div if already has id -->
 	   					<h2>System Designer and Manager</h2>
 	   					<h4>Operations Financial Analytics</h4>
 	   					<ul>
-	   						<li>Created the LifeCell Operations Margin Analysis system which links batch yield, inventory levels, and other business events to financial metrics such as Gross Margin, Manufacturing and Purchasing Variances</li> 
+	   						<li id="DBD-1-text">Created the LifeCell Operations Margin Analysis system which links batch yield, inventory levels, and other business events to financial metrics such as Gross Margin, Manufacturing and Purchasing Variances</li> 
 
 							<ul>
 								<li>Created a “dollars in/dollars out” cost model which explains and predicts Oracle Subledger transactions, tied to the Oracle General Ledger</li>
@@ -913,11 +932,11 @@
 	   					<p>1997 - 2009</p>
 	   				</div>
 
-	   				<div class="timeline-content">
+	   				<div class="timeline-content" id="DBD-2">
 	   					<h2>IT Manager</h2>
 	   					<h4>BI Architecture (2007 - 2009)</h4>
 	   					<ul>
-		   					<li>Sales Compensation Reporting Data Warehouse -- Designed and managed business intelligence (Cognos, Informatica, Oracle, and Kalido) architecture.</li>
+		   					<li id="DBD-2-text">Sales Compensation Reporting Data Warehouse -- Designed and managed business intelligence (Cognos, Informatica, Oracle, and Kalido) architecture.</li>
 						</ul>
 	   				</div>
 
@@ -934,11 +953,11 @@
 	   					<!-- <p>2005 – 2007</p> -->
 	   				</div>
 
-	   				<div class="timeline-content">
+	   				<div class="timeline-content" id="SQL-2">
 	   					<h2>IT Lead</h2>
 	   					<h4>Solutions Delivery (2005 – 2007)</h4>
 	   					<ul>
-		   					<li>Project Lighthouse — Created enterprise business intelligence platform (23 servers).  Hands-on lead of 10-person team.  Managed $2.7 million budget.</li>
+		   					<li id="SQL-2-text">Project Lighthouse — Created enterprise business intelligence platform (23 servers).  Hands-on lead of 10-person team.  Managed $2.7 million budget.</li>
 
 		   					<li>Deep expertise in the following technologies:</li>
 								<ul>
@@ -1078,21 +1097,6 @@
 			   	info@kardswebsite.com			     
 			   </p>
 
-   		</div>
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-phone"></i>
-   			</div>
-
-   			<h5>Call Me At</h5>
-
-   			<p>Phone: (+63) 555 1212<br>
-			   	Mobile: (+63) 555 0100<br>
-			     	Fax: (+63) 555 0101
-			   </p>
-
    		</div> -->
    		
    	</div> <!-- /contact-info -->
@@ -1141,61 +1145,11 @@
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/highlight.js"></script> <!-- scroll-highlight feature -->
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script> <!-- image carousel -->
-
-	<script type="text/javascript">
-		var SQLlink = document.getElementById('SQL-1-link');
-		var SQLtext = document.getElementById('SQL-1-text');
-
-		$(window).load(function pullSourceText(){
-			var SQLcontainer = document.getElementById('SQL-1-container');
-		
-			SQLcontainer.innerHTML = SQLtext.innerHTML; 
-		});
-
-
-		function fadeButton(){
-		  	$(SQLtext).css('background-color', 'transparent');
-		  	$('#back-to-skills').css('opacity', '0');
-		  	$('#close').css('opacity', '0');
-			$('#back-to-skills').remove();
-			$('#close').remove();
-			
-			return;
-		};
-
-		// when click SQLlink, scrollHighlight
-		$(SQLlink).on('click', function scrollHighlight() {
-
-			var backButtonDOM = "<a id='back-to-skills' class='button' href='#skills' onclick='fadeButton()'>Back to Skills</a><a id='close' onclick='fadeButton()'></a>"; //smoothscroll not working?
-
-			$(SQLtext).css('background-color', 'lemonchiffon');
-			$(SQLtext).css('transition', 'background-color 0.3s ease');
-
-			$(SQLtext).before(backButtonDOM);
-
-			// setTimeout(ifScrolled, 3000);
-
-			// function ifScrolled(e){		
-
-			// 	window.addEventListener('scroll', function(e) {
-
-			// 		var SQLposition = document.getElementById('SQL-1');
-
-			// 		if (window.scrollY != SQLposition.scrollHeight ){
-			// 			fadeButton();
-			// 			console.log('running fadeButton');
-			// 			return;	
-			// 		}
-			// 	});
-			// };
-
-  		});
-
-	</script>>
 
 	<script type="text/javascript">
 		function slickCarousel(){
@@ -1222,6 +1176,6 @@
 		document.getElementById('copyright_content').innerHTML = setcopyright();
 	</script>
 
-</body>
+	</body>
 
 	</html>

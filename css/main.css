@@ -1489,9 +1489,16 @@ header .logo a {
 	line-height: 2.4rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	color: #FFFFFF;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
+.intro-content .intro-position a{
+	color: #FFFFFF;
+}
+
+.intro-content .intro-position a:hover{
+	color: #FF0077;
+}
+
 .intro-content .intro-position span {
 	display: inline-block;
 }
@@ -2938,7 +2945,7 @@ footer .copyright span:last-child::after {
 
 
 .tooltip {
-  position: relative;
+  /*position: relative;*/
   display: inline-block;
   padding-bottom: 40px;
   padding-right: 30px;
@@ -2994,8 +3001,8 @@ footer .copyright span:last-child::after {
 	position: absolute;
 	z-index: 1;
 	top: 60%;
-	left: 20%;
-	margin-left: -50px;
+	left: 0%;
+	/*margin-left: -50px;*/
 
 	/*  bottom: 125%;
 	left: 50%;

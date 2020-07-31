@@ -99,29 +99,6 @@
 	
 	});	
 
-	/*-----------------------------------------------------*/
-  	/* Navigation - Skills
-   ------------------------------------------------------ */  
-   var skillButton = $('.skill-toggle'),
-       skillNav = $('.skill-navigation');
-
-   // skill button
-   skillButton.on('click', function(e) {
-
-		e.preventDefault();
-		skillButton.toggleClass('is-clicked');
-		skillNav.slideToggle();
-
-	});
-
-   // nav items
-  	skillNav.find('li a').on("click", function() {   
-
-   	// update the toggle button 		
-   	skillButton.toggleClass('is-clicked'); 		
-   	     
-  	});
-
 
 	/*----------------------------------------------------*/
 	/*	Modal Popup
@@ -202,7 +179,7 @@
 	 	
 	 	e.preventDefault();
 
-   	var target = this.hash,
+   		var target = this.hash,
     	$target = $(target);
 
     	$('html, body').stop().animate({
@@ -262,7 +239,7 @@
 		      error: function() {
 
 		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please use the link below.");
+		      	$('#message-warning').html("Something went wrong. Please reach out through LinkedIn (below).");
 		         $('#message-warning').fadeIn();
 
 		      }
