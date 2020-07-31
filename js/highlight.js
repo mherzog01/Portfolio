@@ -46,10 +46,10 @@ function fadeButton(){
 
 
 function scrollHighlight(text){
-	var backButtonDOM = "<a id='back-to-skills' class='button' href='#skills' onclick='fadeButton()'>Back to Skills</a><a id='close' onclick='fadeButton()'></a>"; //smoothscroll not working?
+	var backButtonDOM = "<div id='button-container'><a id='back-to-skills' class='button' href='#skills' onclick='fadeButton()'>Back to Skills</a><a id='close' onclick='fadeButton()'></a></div>"; //smoothscroll not working?
 	$(text).css('background-color', 'lemonchiffon');
 	$(text).css('transition', 'background-color 0.3s ease');
-	$(text).before(backButtonDOM);
+	$(text).after(backButtonDOM);
 };
 
 
@@ -57,11 +57,8 @@ function scrollHighlight(text){
 
 // add any new items here:
 $(SQL1link).on('click', function() { scrollHighlight(SQL1text); });
-
 $(SQL2link).on('click', function() { scrollHighlight(SQL2text); });
-
 $(DBD1link).on('click', function() { scrollHighlight(DBD1text); });
-
 $(DBD2link).on('click', function() { scrollHighlight(DBD2text); });
 
 

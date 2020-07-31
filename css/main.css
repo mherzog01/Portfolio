@@ -941,11 +941,19 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * -------------------------------------------------------------------
  */
 
+#button-container{
+	display: inline-block;
+	float: right;
+
+}
+
 #back-to-skills{
 	position: absolute;
-    left: 15%;
     opacity: 1;
     transition: opacity 0.3s ease;
+    z-index: 1;
+    margin-left: -240px;
+    float: right;
 }
 
 #back-to-skills::before{
@@ -954,21 +962,31 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	font-size: 1rem;
     vertical-align: middle;
     padding-right: 1rem;
-
 }
+
 #close{
-	top: 39%;
-	left: 39%;
 	height: 24px;
   	width: 24px;
   	position: absolute;
+  	float: right;
+  	margin-top: -1%;
+  	margin-left: -15px;
+  	z-index: 2 !important;
   	background-color: #bebebe;
   	border-radius: 50%;
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
   	opacity: 1;
     transition: opacity 0.3s ease;
+}
+
+#close::before{
+	content: '\f00d';
+	font-family: 'fontAwesome';
+	font-size: 1.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -2px;
+    margin-left: 1px;
 }
 
 #close:hover{
@@ -981,11 +999,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	transition: all 0.3s ease-in-out;
 }
 
-#close::before{
-  content: '\f00d';
-  font-family: 'fontAwesome';
-  font-size: 1.25rem;
-}
 
 #skills {
 	background-color:  #d8d8d8;
