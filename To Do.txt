@@ -27,6 +27,7 @@ Other
 5.  Values:  Trusted to Deliver, Assume Noble Intent
 6.  Team leader
 [in final steps] 7.  Remove code that is commented out
+7.  Set up forward to more friendly URL (e.g. mherzog01/github.io/portfolio (no capital P))
 
 Development areas
 1.  Ability to convincingly use the word "at scale"
